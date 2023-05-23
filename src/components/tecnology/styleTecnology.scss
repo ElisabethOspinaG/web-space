@@ -1,0 +1,115 @@
+@import '../../index.scss';
+
+
+.tech {
+  &__container {
+    display: flex;
+    flex-direction: row;
+    // margin-top: 3rem;
+    position: relative;
+  }
+
+  &__steps {
+    width: 30%;
+  }
+
+  &__description {
+    width: 35%;
+  }
+
+  &__img {
+    width: 45%;
+    display: flex;
+    justify-content: end;
+
+    img {
+      width: 380px;
+      height: 400px;
+    }
+  }
+
+  &__titleSpace {
+    // margin-left: 20rem;
+    margin-top: 2rem;
+    color: $colorWhite;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.72px;
+    font-family: $fontsubTitle;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    &__numTittle {
+      margin-left: 17rem;
+      //   color: $colorWhite;
+      //   font-size: 28px;
+      //  line-height: 34px;
+      //  letter-spacing: 4.72px;
+      //  font-family: $fontsubTitle;
+      font-weight: bold;
+    }
+    &__tittle {
+      font-size: 28px;
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 470px;
+    margin-top: 4rem;
+    // width: 325px;
+    // height: 383px;
+  }
+
+  &__title {
+    font-family: $fontsubTitle;
+    font-size: 1rem;
+    line-height: 19px;
+    line-height: 100%;
+    letter-spacing: 2.7px;
+    color: $colorBlue;
+    width: 470px;
+  }
+
+  &__name {
+    font-family: $fontTitle;
+    font-size: 56px;
+    line-height: 64px;
+    // line-height: 100%;
+    color: $colorWhite;
+    width: 470px;
+  }
+
+  &__paragraph {
+    font-family: $fontParagraph;
+    font-size: 18px;
+    line-height: 32px;
+    line-height: 148%;
+    color: $colorBlue;
+    width: 444px;
+  }
+
+
+}
+
+.active__step {
+  @include buttonwhite;
+}
+
+.inactive__step {
+  @include buttonDark;
+}
+
+.button__container {
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 15%;
+  top: 42%;
+  gap: 1rem;
+  z-index: 99;
+}
