@@ -91,7 +91,7 @@
     align-items: center;
     visibility: hidden;
     transition: width 400ms cubic-bezier(.075, .82, .165, 1);
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
   ul {
    
@@ -100,10 +100,14 @@
     align-items: center;
     font-weight: 600;
     cursor: pointer;
+    li {
+        margin-top: 2rem;
+    }
     li:hover {
+        margin-top: 2rem;
       .line {
       visibility: visible;
-      margin-top: 1 rem;
+    //   margin-top: 2rem;
       }
     }
   }
