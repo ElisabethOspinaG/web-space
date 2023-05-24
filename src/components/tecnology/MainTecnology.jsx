@@ -1,7 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './styleTecnology.scss'
 
 const MainTecnology = ({ technology, techId }) => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const getImageSource = (item) => {
+    return windowWidth <= 768 ? item.imageMobile : item.imageDesk;
+  }
   return (
     <div>
       {technology
@@ -23,7 +40,7 @@ const MainTecnology = ({ technology, techId }) => {
                 <p className='tech__paragraph'>{item.paragraph}</p>
               </div>
               <figure className='tech__img'>
-                <img src={item.imagen} alt={item.name} />
+                <img src={getImageSource(item)} alt={item.name} />
               </figure>
             </div>
           </div>

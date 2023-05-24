@@ -1,18 +1,25 @@
 import React, { useState } from 'react';
 import launch from '../../assets/img/launch.jpg'
+import launchMobile from '../../assets/img/launchMobile.png'
 import spaceport from '../../assets/img/spaceport.png'
 import capsule from '../../assets/img/capsule.png'
+import spaceportMobile from '../../assets/img/spaceportMobile.png'
+import capsuleMobile from '../../assets/img/capsuleMobile.png'
 import MainTecnology from './MainTecnology';
 import './styleTecnology.scss'
 
 
 const StepComponent = () => {
+
+  
+
     const technology = [
         {
           id: 1,
           name: "LAUNCH VEHICLE",
           text: "THE TERMINOLOGY…",
-          imagen: launch,
+          imageDesk: launch,
+          imageMobile: launchMobile,
           numTittle: "03",
           title: "SPACE LAUNCH 101",
           paragraph: "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!  ",
@@ -21,7 +28,8 @@ const StepComponent = () => {
           id: 2,
           name: "SPACEPORT",
           text: "THE TERMINOLOGY…",
-          imagen: spaceport,
+          imageDesk: spaceport,
+          imageMobile: spaceportMobile,
           numTittle: "03",
           title: "SPACE LAUNCH 101",
           paragraph: "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.  ",
@@ -30,7 +38,8 @@ const StepComponent = () => {
           id: 3,
           name: "SPACE CAPSULE",
           text: "THE TERMINOLOGY…",
-          imagen: capsule,
+          imageDesk: capsule,
+          imageMobile: capsuleMobile,
           numTittle: "03",
           title: "SPACE LAUNCH 101",
           paragraph: "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.  ",
