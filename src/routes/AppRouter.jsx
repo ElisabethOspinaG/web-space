@@ -6,6 +6,7 @@ import Destination from '../components/destination/Destination';
 import Crew from '../components/crew/Crew';
 import Tecnology from '../components/tecnology/Tecnology';
 import Home from '../components/home/Home';
+import InfoDestination from '../components/destination/InfoDestination';
 
 
 const AppRouter = () => {
@@ -16,7 +17,12 @@ const AppRouter = () => {
       <Routes>
         <Route path={"/"} element={<Layout />}>
           <Route index element={<Home/>} />
-          <Route path={"destination"} element={<Destination />} />
+          <Route path={"destination"} element={<Destination />}>
+            <Route path={'moon'} element={<InfoDestination/>}/>
+            <Route path={'mars'} element={<InfoDestination/>}/>
+            <Route path={'europa'} element={<InfoDestination/>}/>
+            <Route path={'titan'} element={<InfoDestination/>}/>
+          </Route>
           <Route path={"crew"} element={<Crew />} />
           <Route path={"tecnology"} element={<Tecnology />} />
         </Route>

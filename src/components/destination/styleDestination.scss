@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:ital@0;1&family=Bellefair&display=swap');
+@import '../../styles/styles.scss';
+
+
+.main {
+    display: flex;
+
+    &__containerLeft {
+        width: 53rem;
+        height: 46rem;
+       
+    }
+
+    &__containerTitle {
+        display: flex;
+        gap: 1.5rem;
+        width: 25rem;
+       
+        margin-left: 11rem;
+        margin-top: 5rem;
+
+    }
+
+    &__numTitle {
+
+        height: 34px;
+        font-family: $fontsubTitle;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 4.725px;
+        color: $colorGray;
+        mix-blend-mode: normal;
+        opacity: 0.25;
+    }
+
+    &__title {
+
+        height: 34px;
+        color: $colorWhite;
+        // left: 14.14%;
+        // right: 1.57%;
+        // top: calc(50% - 34px/2);
+
+        font-family: $fontsubTitle;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 34px;
+        /* identical to box height */
+        letter-spacing: 4.725px;
+        text-transform: uppercase;
+    }
+
+    &__containerImg {
+        margin-left: 15rem;
+        margin-top: 6rem;
+        width: 35rem;
+       
+    }
+
+    &__figureImg {
+        
+        width: 29rem;
+        height: 29rem;
+        padding: 10px;
+
+        &img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__containerRight {
+        width: 29rem;
+        height: 42rem;
+      
+        padding-left: 2.5rem;
+        padding-top: 10rem;
+
+    }
+
+    &__containerName {
+       
+        width: 17rem;
+        padding-top: 2rem;
+        font-family: $fontTitle;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 100px;
+        line-height: 115px;
+        color: $colorWhite;
+    }
+
+    &__containerParagraph {
+       
+        width: 25rem;
+        padding-bottom: 3rem;
+
+    }
+
+    &__paragraph{
+
+        font-family: $fontParagraph;
+        color: $colorBlue;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+    }
+    &__line{
+       width: 25rem;
+        height: 1px;
+        position: absolute;
+        background-color: $colorWhite;
+    }
+    &__containerSubtile{
+        width: 18rem;
+       
+        font-family: $fontsubTitle;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 17px;
+        letter-spacing: 2.3625px;
+        text-transform: uppercase;
+        color: $colorBlue;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2rem;
+        padding-bottom: 8px;
+
+    }
+    &__containerDate{
+        font-family: $fontTitle;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 32px;
+        text-transform: uppercase;
+        display: flex;
+        
+    }
+    &__distance{
+        margin-right: 85px;
+        color: $colorWhite;
+    }
+
+
+}
