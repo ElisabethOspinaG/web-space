@@ -1,0 +1,93 @@
+@import '../../index.scss';
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+
+    margin: 0 90px 0 150px;
+}
+
+.main_container {
+    width: 50%;
+}
+
+.main_main {
+    display: flex;
+    margin-top: 20px;
+
+    p {
+        width: 80px;
+        height: 34px;
+        opacity: 25%;
+        font-family: $fontsubTitle;
+        font-size: 28px;
+    }
+
+    h2 {
+        width: 228px;
+        height: 34px;
+        font-family: $fontsubTitle;
+        font-size: 28px;
+        
+    }
+}
+.main_description{
+    h3 {
+        margin-top: 100px;
+        opacity: 25%;
+        font-family: $fontTitle;
+        font-size: 32px;
+       
+    }
+    h2{
+        margin-top: 10px;
+        font-family: $fontTitle;
+        font-size: 56px;
+        white-space: nowrap; 
+        
+    }
+    p{
+        margin-top: 30px;
+        font-family: $fontParagraph;
+        font-size: 18px;
+        line-height: 30px;
+        
+       
+    }
+}
+
+.main_foto1 {
+
+    height: 512px;
+    width: 100%;
+}
+
+.main_foto1 img {
+    height: 100%;
+    width: 100%;
+}
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+   
+  }
+  .carousel_controls{
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    top: 610px;
+
+  }
+  .carousel_controls :hover{
+    background: white;
+    border-radius: 50%;
+  }
+  .active_botones {
+    background: white;
+    border-radius: 50%;
+  }
+
+  
