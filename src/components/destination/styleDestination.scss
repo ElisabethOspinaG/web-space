@@ -1,7 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:ital@0;1&family=Bellefair&display=swap');
 @import '../../styles/styles.scss';
-
-
+.nav{
+    &__Destination{
+        margin-left: 55.5rem;
+        padding-top: 11rem;
+        position: absolute;
+    }
+    ul {
+   
+        display: flex;
+        
+        align-items: center;
+        font-weight: 600;
+        cursor: pointer;
+        li:hover {
+          .line {
+          visibility: visible;
+          margin-top: 1 rem;
+          }
+        }
+      }
+   
+}
 .main {
     display: flex;
 
@@ -77,18 +97,19 @@
         height: 42rem;
       
         padding-left: 2.5rem;
-        padding-top: 10rem;
+        padding-top: 12rem;
 
     }
 
     &__containerName {
        
         width: 17rem;
-        padding-top: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 1.3rem;
         font-family: $fontTitle;
         font-style: normal;
         font-weight: 400;
-        font-size: 100px;
+        font-size: 7rem;
         line-height: 115px;
         color: $colorWhite;
     }
@@ -96,7 +117,7 @@
     &__containerParagraph {
        
         width: 25rem;
-        padding-bottom: 3rem;
+        padding-bottom: 4rem;
 
     }
 

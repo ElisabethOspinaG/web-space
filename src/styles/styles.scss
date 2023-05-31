@@ -51,12 +51,7 @@ $colorGray: #616476;
     mix-blend-mode: normal;
     opacity: 0.25;
 }
-@mixin buttonwhite {
-   border-radius: 50%;
-   background-color: $colorWhite;
-   height: 80px;
-   width: 80px;
-}
+
 @mixin buttonwhite {
     border-radius: 50%;
     background-color: $colorWhite;
@@ -71,7 +66,7 @@ $colorGray: #616476;
     }
  }
 
-*{
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;

@@ -7,7 +7,7 @@ import euro from '../../assets/img/EUROPA.svg';
 import titan from '../../assets/img/TITAN.svg';
 
 
-const InfoDestination = () => {
+const InfoComponent = () => {
 
     const space = [
         {
@@ -105,4 +105,4 @@ const InfoDestination = () => {
   )
 }
 
-export default InfoDestination;
+export default InfoComponent;
