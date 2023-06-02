@@ -56,6 +56,8 @@ $colorGray: #616476;
    background-color: $colorWhite;
    height: 80px;
    width: 80px;
+    font-family: $fontTitle;
+    font-size: 32px;
 }
 @mixin buttonwhite {
     border-radius: 50%;
@@ -64,10 +66,12 @@ $colorGray: #616476;
     width: 80px;
     color: &$colorWhite; 
     border: $colorWhite;
+    font-family: $fontTitle;
+    font-size: 32px;
 
     &:active{
         color: $colorDark;
-        background-color: &$colorWhite;
+        background-color: $colorWhite;
     }
  }
 
@@ -80,3 +84,13 @@ $colorGray: #616476;
     list-style: none;
     
 }
+@mixin buttonDark {
+    border-radius: 50%;
+    color: $colorWhite;
+    background-color: $colorDark;
+    height: 80px;
+    width: 80px;
+    border: 1px solid $colorGray;
+    font-family: $fontTitle;
+    font-size: 32px;
+ }

@@ -157,7 +157,7 @@
 }
 
 .line {
-    width: 40px;
+    width: 100px;
     height: 2px;
     background-color: white;
     margin: auto;
@@ -167,32 +167,22 @@
     align-items: center;
     visibility: hidden;
     transition: width 400ms cubic-bezier(.075, .82, .165, 1);
-    margin-top: 1rem;
-}
-
-ul {
-
+    margin-top: 2rem;
     display: flex;
     gap: 2rem;
     align-items: center;
     font-weight: 600;
     cursor: pointer;
-
+    li {
+        margin-top: 2rem;
+    }
     li:hover {
-        .line {
-            visibility: visible;
-            margin-top: 1 rem;
-        }
+        margin-top: 2rem;
+      .line {
+      visibility: visible;
+    //   margin-top: 2rem;
+      }
     }
-
-    @include tablet {
-        height: autopx;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        letter-spacing: 2.3625px;
-    }
-
     @include mobile {
         height: auto;
     }
