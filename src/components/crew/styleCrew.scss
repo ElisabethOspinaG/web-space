@@ -1,27 +1,58 @@
-@import '../../index.scss';
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:ital@0;1&family=Bellefair&display=swap');
+@import '../../styles/styles.scss';
 
-.main {
-    display: flex;
-    justify-content: space-between;
+.main_container_principal{
     color: white;
+    margin: 0 90px 0 100px;
+    @include tablet {
+        display: inline-block;
+        margin: 20px 50px 0 40px;
+        width: 100%;
+        align-items: center;
+    }
 
-    margin: 0 90px 0 150px;
+
 }
 
+
 .main_container {
-    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    @include tablet {
+        display: inline-block;
+    }
+   
+    @include mobile{
+        display: flex;
+     margin:auto ;
+       flex-direction: column-reverse;
+    }
+
+
 }
 
 .main_main {
     display: flex;
     margin-top: 20px;
 
+    @include tablet {
+        margin-top: 20px;
+        
+    }
+    @include mobile{
+        align-items: center;
+    }
     p {
         width: 80px;
         height: 34px;
         opacity: 25%;
         font-family: $fontsubTitle;
         font-size: 28px;
+
+        @include tablet {
+            font-size: 20px;
+        }
     }
 
     h2 {
@@ -29,31 +60,68 @@
         height: 34px;
         font-family: $fontsubTitle;
         font-size: 28px;
-        
+
+        @include tablet {
+            font-size: 20px;
+        }
     }
 }
-.main_description{
+
+.main_description {
+    width: 50%;
+    @include tablet {
+        width: 100%;
+    }
+    @include mobile{
+        width: 100%;
+    }
     h3 {
         margin-top: 100px;
         opacity: 25%;
         font-family: $fontTitle;
         font-size: 32px;
-       
+
+        @include tablet {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 50px; 
+        }
+        @include mobile{
+            font-size: 16px;
+            text-align: center;
+        }
     }
-    h2{
+
+    h2 {
         margin-top: 10px;
         font-family: $fontTitle;
         font-size: 56px;
-        white-space: nowrap; 
-        
+        white-space: nowrap;
+
+        @include tablet {
+            font-size: 40px;
+            text-align: center;
+        }
+        @include mobile{
+            font-size: 24px;
+        }
     }
-    p{
+
+    p {
         margin-top: 30px;
         font-family: $fontParagraph;
+        font-style: normal;
+        font-weight: 400;
         font-size: 18px;
-        line-height: 30px;
-        
-       
+      
+
+        @include tablet {
+            font-size: 16px;
+            }
+            @include mobile{
+                font-size: 15px;
+                margin-bottom: 70px;
+            }
     }
 }
 
@@ -61,33 +129,51 @@
 
     height: 512px;
     width: 100%;
+
+    @include tablet {
+margin-top: 100px;
+    }
+    @include mobile{
+        margin-top: 10px;
+    }
 }
 
 .main_foto1 img {
     height: 100%;
     width: 100%;
 }
+
 .circle {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.5);
-   
-  }
-  .carousel_controls{
+
+}
+
+.carousel_controls {
     display: flex;
     gap: 15px;
     position: absolute;
-    top: 610px;
+    top: 560px;
+    left: 100px;
 
-  }
-  .carousel_controls :hover{
+    @include tablet {
+        top: 470px;
+        left: 50%;
+    }
+    @include mobile{
+        top: 680px;
+    }
+
+}
+
+.carousel_controls :hover {
     background: white;
     border-radius: 50%;
-  }
-  .active_botones {
+}
+
+.active_botones {
     background: white;
     border-radius: 50%;
-  }
-
-  
+}
