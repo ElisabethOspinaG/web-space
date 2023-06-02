@@ -1,5 +1,5 @@
 @import '../../index.scss';
-
+@import '../../styles/mediaQuery.scss';
 .nav {
     // @include rectangleNadVar;
     display: flex;
@@ -8,11 +8,13 @@
     width: 100%;
     height: 150px;
     align-items: center;
+
+
    
     &__navBar{
         display: flex;
         flex-direction: row;
-        width: 730px;   
+        width: 45.6rem;   
         height: 96px;
         background: rgba(255, 255, 255, 0.04);
         backdrop-filter: blur(40.7742px);
@@ -20,6 +22,16 @@
         align-items: center;
         padding-left: 5rem;
         color: $colorWhite;
+
+        @include tablet {
+            width: 30rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        @include mobile {
+            display: none;
+        }
+
                 
         ul{
             display: flex;
@@ -55,12 +67,19 @@
     
     }
     &__line{
-        width: 473px;
+        width: 30rem;
         height: 1px;
         position: absolute;
         background-color: $colorWhite;
         left: 11rem;
         z-index: 99;
+
+        @include tablet {
+            display: none;
+        }
+        @include mobile {
+            display: none;
+        }
     }
     &__link{
         color: $colorWhite;

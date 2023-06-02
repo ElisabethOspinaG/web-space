@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:ital@0;1&family=Bellefair&display=swap');
+@import "./mediaQuery.scss";
+
+$fontTitle: 'Bellefair', sans-serif;
+$fontsubTitle: 'Barlow Condensed', San Serif;
+$fontParagraph: 'Barlow';
+$colorWhite: #FFFFFF;
+$colorBlue: #D0D6F9;
+$colorDark:#0B0D17;
+$colorGray: #616476;
+
+@mixin rectangleNadVar {
+    position: absolute;
+    width: 830px;
+    height: 96px;
+    left: 610px;
+    top: 40px;
+
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+}
+
+/* Rectangle */
+
+@mixin line {
+    position: absolute;
+    width: 473px;
+    height: 1px;
+    left: 167px;
+    top: 88px;
+
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+
+
+@mixin circleGray {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 0px 1px 2px #000000;
+}
+
+@mixin circleGrayDark {
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.17;
+}
+
+@mixin circleGrayDark {
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+@mixin buttonwhite {
+    border-radius: 50%;
+    background-color: $colorWhite;
+    height: 80px;
+    width: 80px;
+    color: &$colorWhite; 
+    border: $colorWhite;
+
+    &:active{
+        color: $colorDark;
+        background-color: &$colorWhite;
+    }
+ }
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fontParagraph;
+    text-decoration: none;
+    list-style: none;
+    
+}
