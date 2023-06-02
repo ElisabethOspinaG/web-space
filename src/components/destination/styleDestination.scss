@@ -9,7 +9,7 @@
 
         @include tablet{
 
-            background: fuchsia;
+           
             margin-left: 12rem;
             margin-top: 26rem;
             padding: 1rem;
@@ -18,7 +18,7 @@
             justify-content: space-between;
         }
         @include mobile{
-            background: fuchsia;
+            
             margin-left:3rem;
             margin-top: 17.5rem;
             padding: 1rem;
