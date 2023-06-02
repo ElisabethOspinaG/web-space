@@ -16,7 +16,7 @@ const AppRouter = () => {
       <Routes>
         <Route path={"/"} element={<Layout />}>
           <Route index element={<Home/>} />
-          <Route path={"destination"} element={<Destination />}>
+          <Route path={"destination"} element={<Destination />} >
             <Route path={'moon'} element={<InfoComponent name={"MOON"}/>}/>
             <Route path={'mars'} element={<InfoComponent name={"MARS"}/>}/>
             <Route path={'europa'} element={<InfoComponent name={"EUROPA"}/>}/>
