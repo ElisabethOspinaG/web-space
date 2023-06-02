@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:ital@0;1&family=Bellefair&display=swap');
+@import "./mediaQuery.scss";
 
 $fontTitle: 'Bellefair', sans-serif;
 $fontsubTitle: 'Barlow Condensed', San Serif;
@@ -7,19 +8,6 @@ $colorWhite: #FFFFFF;
 $colorBlue: #D0D6F9;
 $colorDark:#0B0D17;
 $colorGray: #616476;
-
-@mixin rectangleNadVar {
-    position: absolute;
-    width: 830px;
-    height: 96px;
-    left: 610px;
-    top: 40px;
-
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(40.7742px);
-}
-
-/* Rectangle */
 
 @mixin line {
     position: absolute;
@@ -51,12 +39,7 @@ $colorGray: #616476;
     mix-blend-mode: normal;
     opacity: 0.25;
 }
-@mixin buttonwhite {
-   border-radius: 50%;
-   background-color: $colorWhite;
-   height: 80px;
-   width: 80px;
-}
+
 @mixin buttonwhite {
     border-radius: 50%;
     background-color: $colorWhite;
@@ -71,7 +54,7 @@ $colorGray: #616476;
     }
  }
 
-*{
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;

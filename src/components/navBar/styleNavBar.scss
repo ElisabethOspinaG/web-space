@@ -1,18 +1,29 @@
 @import '../../index.scss';
+@import '../../styles/mediaQuery.scss';
 
 .nav {
-    // @include rectangleNadVar;
+
     display: flex;
     background-color: transparent;
     justify-content: space-between;
     width: 100%;
     height: 150px;
     align-items: center;
-   
-    &__navBar{
+
+    @include tablet {
+        height: 4rem;
+        width: 40rem;
+    }
+
+    @include mobile {
+        width: 23rem;
+        height: auto;
+    }
+
+    &__navBar {
         display: flex;
         flex-direction: row;
-        width: 730px;   
+        width: 45.6rem;
         height: 96px;
         background: rgba(255, 255, 255, 0.04);
         backdrop-filter: blur(40.7742px);
@@ -20,12 +31,35 @@
         align-items: center;
         padding-left: 5rem;
         color: $colorWhite;
-                
-        ul{
+
+        @include tablet {
+            backdrop-filter: (70.7742px);
+            height: 6rem;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 3.5rem;
+            padding-right: 3.5rem;
+            margin-left: 7rem;
+            padding-top: 2rem;
+        }
+
+        @include mobile {
+            display: none;
+
+        }
+
+        ul {
             display: flex;
             flex-direction: row;
             gap: 2rem;
-            span{
+
+            @include tablet {}
+
+            @include mobile {
+                display: none;
+            }
+
+            span {
                 margin-right: 0.5rem;
                 color: $colorWhite;
                 font-size: 1rem;
@@ -34,35 +68,78 @@
                 line-height: 19px;
                 letter-spacing: 2.7px;
                 font-weight: 700;
-                &:hover{
+
+                &:hover {
                     color: $colorGray;
                     border: 2px;
+                }
+
+                @include tablet {
+
+                    display: none;
+                }
+
+                @include mobile {
+                    display: none;
+
                 }
             }
         }
 
-        &__logo{
+        &__logo {
 
             margin-left: 50px;
+
+            @include tablet {
+                margin-left: 2rem;
+                margin-top: 1rem;
+                height: autopx;
+            }
+
+            @include mobile {
+
+                height: auto;
+            }
         }
-        &__figureLogo{
+
+        &__figureLogo {
 
             width: 48px;
             height: 48px;
             background-color: $colorWhite;
             border-radius: 50%;
+
+            @include tablet {
+                height: autopx;
+            }
+
+            @include mobile {
+                height: auto;
+
+            }
+
         }
-    
+
     }
-    &__line{
-        width: 473px;
+
+    &__line {
+        width: 30rem;
         height: 1px;
         position: absolute;
         background-color: $colorWhite;
         left: 11rem;
         z-index: 99;
+
+        @include tablet {
+            display: none;
+        }
+
+        @include mobile {
+            display: none;
+        }
     }
-    &__link{
+
+    &__link {
         color: $colorWhite;
         font-family: $fontsubTitle;
         font-size: 1rem;
@@ -71,17 +148,16 @@
         line-height: 19px;
         letter-spacing: 2.7px;
 
-        &:hover{
+        &:hover {
             color: $colorGray;
             border: 10px;
-           
         }
     }
-       
+
 }
 
 .line {
-    width: 40px;
+    width: 100px;
     height: 2px;
     background-color: white;
     margin: auto;
@@ -91,21 +167,97 @@
     align-items: center;
     visibility: hidden;
     transition: width 400ms cubic-bezier(.075, .82, .165, 1);
-    margin-top: 1rem;
-  }
-  ul {
-   
+    margin-top: 2rem;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     align-items: center;
     font-weight: 600;
     cursor: pointer;
-    li:hover {
-      .line {
-      visibility: visible;
-      margin-top: 1 rem;
-      }
-    }
-  }
 
-  
+    li {
+        margin-top: 2rem !important;
+    }
+
+    li:hover {
+        margin-top: 2rem !important;
+
+        .line {
+            visibility: visible;
+            //   margin-top: 2rem;
+        }
+    }
+
+    @include mobile {
+        height: auto;
+    }
+}
+
+.menuBurgerClass {
+    background-color: red;
+    position: fixed;
+    width: 80vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    padding-left: 2rem;
+    padding-right: 12px;
+    // margin-left: 8%;
+    left: 20%;
+
+}
+
+.nav__ul {
+    @include mobile {
+    margin-top: 20%;
+    li {
+      
+          
+        }
+    }
+}
+
+.menu__button {
+    display: none;
+
+    @include mobile {
+        display: flex;
+    }
+
+}
+
+.menuBurgerClass {
+    img {
+        text-align: end;
+    }
+
+    color: #fff;
+
+}
+.btn__open {
+    color: $colorWhite;
+    font-size: 24px;
+    padding: 12px;
+}
+
+.button__close {
+    color: $colorWhite;
+    font-size: 24px;
+    padding: 12px;
+    text-align: end;
+    padding: 12px;
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .menu__button {
+        display: flex;
+    
+    }
+}
