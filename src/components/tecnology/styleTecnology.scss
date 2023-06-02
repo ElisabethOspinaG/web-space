@@ -204,7 +204,6 @@
     margin-left: 2rem;
   }
 
-  /* Estilos para pantallas de 768px o superiores */
 }
 
 @include mobile {
@@ -212,7 +211,6 @@
     font-size: 24px;
   }
 
-  /* Estilos para pantallas de 375px o superiores */
   .active__step {
     width: 40px;
     height: 40px;
