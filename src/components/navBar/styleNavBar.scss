@@ -208,7 +208,7 @@
     padding-left: 2rem;
     padding-right: 12px;
     // margin-left: 8%;
-    left: 6%;
+    left: 20%;
 
 }
 
@@ -252,7 +252,12 @@
     text-align: end;
     padding: 12px;
 }
-.button__container {
-   
 
+
+@media screen and (max-width: 400px) {
+
+    .menu__button {
+        display: flex;
+    
+    }
 }
