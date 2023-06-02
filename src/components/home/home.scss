@@ -1,40 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:ital@0;1&family=Bellefair&display=swap');
+  @import '../../styles/styles.scss';
+  
 .home-fondo {
   background-image: url('../../assets/img/imagen.png');
   background-size: cover;
-  @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:ital@0;1&family=Bellefair&display=swap');
-  /* Otros estilos de fondo si es necesario */
+  
 
 }
 
 .container__home {
   display: flex;
   flex-direction: column;
-  margin-top: 300px;
-  margin-left: 200px;
+  width: 100%;
+ padding: 80px 20px 0px 160px;
+ @include tablet {
+  display: inline-block;
+  align-items: center;
+  margin-top: 40px;
+ }
+ @include mobile{
+ padding: 20px 10px 0px 40px;
+ }
 
 
 
     h1 {
       color: white;
-      height: 172px;
-      width: 445px;
-      left: 0px;
-      // top: 158px;
       border-radius: nullpx;
       font-family: Bellefair;
       font-size: 150px;
       font-weight: 400;
-      line-height: 172px;
+      line-height: 132px;
       letter-spacing: 0px;
       text-align: left;
       margin-top: 50px;
 
-
+      @include tablet{
+        text-align:initial;
+        margin-top: 10px;
+       
+      }
+      @include mobile{
+      font-size: 80px;
+      text-align: center;
+      }
     }
+   
+   
 
     p {
-      height: 128px;
-      width: 444px;
+     
       left: 0.5px;
       top: 254px;
       border-radius: nullpx;
@@ -42,11 +57,21 @@
       font-size: 18px;
       font-weight: 400;
       line-height: 32px;
-      letter-spacing: 0px;
-      text-align: left;
       color: #D0D6F9;
-      margin-top: 50px;
+      margin-top: 30px;
+      @include tablet{
+font-size: 16px;
+text-align: center;
+      }
+      @include mobile{
+        font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+text-align: center;
+      }
     }
+   
   }
   .container__home-info{
     width: 30rem;
@@ -60,18 +85,38 @@
       text-align: left;
       height: 34px;
       left: 0.5px;
+      @include tablet{
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+
     }
+     @include mobile{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: 2.7px;
+      
+      color: #D0D6F9;
+      
+ }
+    }
+    
   }
-
-
 
   .container__home-imagen {
     display: flex;
     position: absolute;
-    margin-left: 1450px;
-    margin-top: -350px;
-    height: -400px;
-
+   margin: -230px 0px 450px 890px;
+    height: -200px;
+    @include tablet{
+      margin: 90px 0 200px 260px;
+    }
+    @include mobile{
+      margin: 100px 0 200px 160px;
+    }
     h2 {
       position: absolute;
       height: 37px;
