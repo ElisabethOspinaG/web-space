@@ -1,5 +1,5 @@
 @import '../../index.scss';
-
+@import '../../styles/mediaQuery.scss';
 
 .tech {
   &__container {
@@ -44,6 +44,7 @@
       margin-left: 17rem;
       font-weight: bold;
     }
+
     &__tittle {
       font-size: 28px;
     }
@@ -118,21 +119,22 @@
     justify-content: center;
     top: 620px;
   }
+
   .tech {
-  &__name {
-    font-family: $fontTitle;
-    font-size: 36px;   
-   
-  }
+    &__name {
+      font-family: $fontTitle;
+      font-size: 36px;
 
-  &__paragraph {
-    font-family: $fontParagraph;
-    font-size: 14px;
-  }
-  }
- }
+    }
 
-@media screen and (max-width: 768px) {
+    &__paragraph {
+      font-family: $fontParagraph;
+      font-size: 14px;
+    }
+  }
+}
+
+@include tablet {
   .tech__img {
     width: 45%;
     display: flex;
@@ -143,6 +145,7 @@
       height: 100%;
     }
   }
+
   .tech__container {
     display: flex;
     flex-direction: column-reverse;
@@ -154,22 +157,28 @@
     width: 100%;
     margin-top: 2.5rem;
   }
+
   .tech__description {
     text-align: center;
     margin-top: 8rem;
+    width: auto;
   }
+
   .button__container {
     display: flex;
     flex-direction: row;
   }
+
   .active__step {
     width: 60px;
     height: 60px;
   }
+
   .inactive__step {
     width: 60px;
     height: 60px;
   }
+
   .button__container {
     width: 100%;
     left: 0;
@@ -182,37 +191,50 @@
     font-size: 20px;
     line-height: 24px;
   }
+
   .tech__titleSpace__numTittle {
     margin-left: 7rem;
   }
+
   .button__container {
     top: 90%;
   }
+
   .tech__titleSpace__numTittle {
     margin-left: 2rem;
   }
 
   /* Estilos para pantallas de 768px o superiores */
 }
-@media screen and (max-width: 375px) {
+
+@include mobile {
+  .tech__name {
+    font-size: 24px;
+  }
+
   /* Estilos para pantallas de 375px o superiores */
   .active__step {
     width: 40px;
     height: 40px;
   }
+
   .inactive__step {
     width: 40px;
     height: 40px;
   }
+
   .tech__description {
     margin-top: 40%;
   }
+
   .button__container {
     top: 80%;
   }
+
   .tech__titleSpace__tittle {
     font-size: 24px;
   }
+
   .tech__titleSpace__numTittle {
     margin-left: 2rem;
   }
