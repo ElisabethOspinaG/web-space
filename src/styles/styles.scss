@@ -9,19 +9,6 @@ $colorBlue: #D0D6F9;
 $colorDark:#0B0D17;
 $colorGray: #616476;
 
-@mixin rectangleNadVar {
-    position: absolute;
-    width: 830px;
-    height: 96px;
-    left: 610px;
-    top: 40px;
-
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(40.7742px);
-}
-
-/* Rectangle */
-
 @mixin line {
     position: absolute;
     width: 473px;
