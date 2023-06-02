@@ -17,10 +17,10 @@ const AppRouter = () => {
         <Route path={"/"} element={<Layout />}>
           <Route index element={<Home/>} />
           <Route path={"destination"} element={<Destination />}>
-            <Route path={'moon'} element={<InfoComponent/>}/>
-            <Route path={'mars'} element={<InfoComponent/>}/>
-            <Route path={'europa'} element={<InfoComponent/>}/>
-            <Route path={'titan'} element={<InfoComponent/>}/>
+            <Route path={'moon'} element={<InfoComponent name={"MOON"}/>}/>
+            <Route path={'mars'} element={<InfoComponent name={"MARS"}/>}/>
+            <Route path={'europa'} element={<InfoComponent name={"EUROPA"}/>}/>
+            <Route path={'titan'} element={<InfoComponent name={"TITAN"}/>}/>
           </Route>
           <Route path={"crew"} element={<Crew />} />
           <Route path={"tecnology"} element={<Tecnology />} />

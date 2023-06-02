@@ -8,6 +8,8 @@ import { Outlet } from 'react-router-dom';
 import NavDestination from './NavDestination';
 
 const Destination = () => {
+
+ 
   // const [Link, setLink] = useState(1);
 
   // const handLinkChange = (newLink) => {
@@ -22,6 +24,8 @@ const Destination = () => {
   // useEffect(() => {
   //   console.log(name);
   // }, []);
+
+
 
   useEffect(() => {
     document.body.style.background = `url(${imgfondo}) no-repeat center center fixed`;
