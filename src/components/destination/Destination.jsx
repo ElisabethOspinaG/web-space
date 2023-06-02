@@ -6,6 +6,7 @@ import imgfondo from '../../assets/img/imgDestination.png';
 import { Outlet } from 'react-router-dom';
 // import { Outlet, useLocation, useNavigation, useParams  } from 'react-router-dom';
 import NavDestination from './NavDestination';
+import InfoComponent from './InfoComponent';
 
 const Destination = () => {
 
@@ -40,6 +41,7 @@ const Destination = () => {
   return (
     <>
       <NavDestination/>
+      {/* <InfoComponent name={"MOON"}/> */}
       <Outlet/>
     </>
   )

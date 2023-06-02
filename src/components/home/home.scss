@@ -146,6 +146,15 @@
    
     }
   }
+  .container__home-explore {
+    h2{
+    position: absolute;
+    top: 523px;
+    font-size: 1.3rem;
+    left: 139px;
+    }
+  
+  }
   
   }
 
@@ -163,13 +172,4 @@
     letter-spacing: 2px;
     color: #0B0D17;
   }
-}
-.container__home-explore {
-  h2{
-  position: absolute;
-  top: 523px;
-  font-size: 1.3rem;
-  left: 139px;
-  }
-
 }

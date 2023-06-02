@@ -1,17 +1,390 @@
+// @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:ital@0;1&family=Bellefair&display=swap');
+// @import '../../styles/styles.scss';
+
+// .nav{
+//     &__Destination{
+        
+//         margin-left: 55.5rem;
+//         padding-top: 11rem;
+//         position: absolute;
+//         font-style: normal;
+//         font-weight: 400;
+
+//         @include tablet{
+//             background-color: aquamarine;
+//             margin-left: 12rem;
+//             margin-top: 27rem;
+//             padding: 1rem;
+//             width: 20rem;
+//             display: flex;
+//             justify-content: space-between;
+//             font-size: 16px;
+//             line-height: 19px;
+//             letter-spacing: 2.7px;
+
+//         }
+//         @include mobile{
+            
+//             margin-left:3rem;
+//             margin-top: 17.5rem;
+//             padding: 1rem;
+//             width: 16.5rem;
+//             display: flex;
+//             justify-content: space-between;
+//         }    
+//     }
+//     ul {
+//         display: flex;
+//         align-items: center;
+//         font-weight: 600;
+//         cursor: pointer;
+//         li:hover {
+//           .line {
+//             visibility: visible;
+//             margin-top: 1rem;
+//             }   
+//         }
+//     }
+// }
+// .main {
+//     display: flex;
+//     @include tablet{
+//         display: flex;
+//         flex-direction: column;
+        
+//         width: 19rem;
+//     }
+//     @include mobile{
+//         display: flex;
+//         flex-direction: column;
+//         background: blue;
+//         width: 12rem;
+
+//     }
+
+//     &__containerLeft {
+//         width: 53rem;
+//         height: 46rem;
+//         @include tablet{
+//             background: yellowgreen;
+//             width: 47rem;
+//             height: 30rem;
+//         }
+//         @include mobile{
+//             background: yellowgreen;
+//             width:22rem;
+//             height: 22rem;
+//         }
+//     }
+
+//     &__containerTitle {
+//         display: flex;
+//         gap: 1.5rem;
+//         width: 25rem;
+//         margin-left: 11rem;
+//         margin-top: 5rem;
+//         @include tablet{
+//             margin-left: 2rem;
+//             background: red;
+//             margin-top: 0.5rem;
+//             gap: 1rem;
+//         }
+//         @include mobile{
+//             background: red;
+//             width: 18rem;
+//             margin-left: 4.5rem;
+//         }
+//     }
+
+//     &__numTitle {
+//         height: 34px;
+//         font-family: $fontsubTitle;
+//         font-style: normal;
+//         font-weight: 700;
+//         font-size: 28px;
+//         line-height: 34px;
+//         letter-spacing: 4.725px;
+//         color: $colorGray;
+//         mix-blend-mode: normal;
+//         opacity: 0.25;
+//         @include tablet{
+//             font-size: 20px;
+//             line-height: 24px;
+//             letter-spacing: 3.375px; 
+//         }
+//         @include mobile{
+//             font-size: 16px;
+//             line-height: 19px;
+//             letter-spacing: 2.7px; 
+//             height: 1.5rem;
+//         }
+//     }
+
+//     &__title {
+//         height: 34px;
+//         color: $colorWhite;
+//         font-family: $fontsubTitle;
+//         font-style: normal;
+//         font-weight: 400;
+//         font-size: 28px;
+//         line-height: 34px;
+//         letter-spacing: 4.725px;
+//         text-transform: uppercase;
+
+//         @include tablet{
+//             font-size: 20px;
+//             line-height: 24px;
+//             letter-spacing: 3.375px;
+//             background: purple;
+//         }
+//         @include mobile{
+//             font-size: 16px;
+//             line-height: 19px;
+//             letter-spacing: 2.7px;
+//             height: 1.5rem;
+//             width: 15rem;
+//         }
+        
+//     }
+
+//     &__containerImg {
+//         margin-left: 15rem;
+//         margin-top: 6rem;
+//         width: 35rem;
+//         @include tablet{
+//             margin-left: 12rem;
+//             margin-top: 3rem;
+//             width: 19rem;
+//             height: 12rem;
+//             background: rgb(82, 82, 203);
+//         }
+//         @include mobile{
+//             margin-left: 2rem;
+//             margin-top: 1.5rem;
+//             width:20rem;
+//             height: 14rem;
+//             background: rgb(82, 82, 203);
+//             padding-left: 3rem;
+//         }
+//     }
+
+//     &__figureImg {
+        
+//         width: 29rem;
+//         height: 29rem;
+//         padding: 10px;
+
+//         @include tablet{
+//             width: 8rem;
+//             padding: 10px;
+//         } 
+//         @include mobile{
+//             width:5rem;
+//             padding: 10px;
+//         }
+
+//         &img {
+//             width: 100%;
+//             height: 100%;
+//         }
+//     }
+
+//     &__containerRight {
+//         width: 29rem;
+//         height: 42rem;
+//         padding-left: 2.5rem;
+//         padding-top: 12rem;
+//         @include tablet{
+//             background: rgb(205, 50, 89);
+//             width: 42.5rem;
+//             height: 22rem;
+//             padding-left:5rem;
+//             padding-top: 1rem;
+//         }
+//         @include mobile{
+//             background: rgb(205, 50, 89);
+//             width:22rem;
+//             height: 15rem;
+//             padding-left:2rem;
+//             padding-top: 0;
+//         }
+
+//     }
+
+//     &__containerName {
+       
+//         width: 17rem;
+//         padding-top: 3rem;
+//         padding-bottom: 1.3rem;
+//         font-family: $fontTitle;
+//         font-style: normal;
+//         font-weight: 400;
+//         font-size: 7rem;
+//         line-height: 115px;
+//         color: $colorWhite;
+
+//         @include tablet{
+//             background: green;
+//             width: 33rem;
+//             font-style: normal;
+//             font-size: 80px;
+//             line-height: 92px;
+//             padding: 0;
+//             margin: 0;
+//             text-align: center;
+
+//         }
+//         @include mobile{
+//             background: green;
+//             width: 19.5rem;
+//             padding-top: 0;
+//         }
+//     }
+
+//     &__containerParagraph {
+       
+//         width: 25rem;
+//         padding-bottom: 4rem;
+        
+//         @include tablet{
+//             background: peru;
+//             width: 33rem;
+//             font-weight: 400;
+//             font-size: 16px;
+//             text-align: center;
+//             padding-bottom: 2rem;
+//         }
+//         @include mobile {
+//             background: peru;
+//             width: 19.5rem;
+//             padding-bottom: 1rem;
+
+//         }
+
+//     }
+
+//     &__paragraph{
+
+//         font-family: $fontParagraph;
+//         color: $colorBlue;
+//         font-style: normal;
+//         font-weight: 400;
+//         font-size: 16px;
+//         line-height: 32px;
+//         @include mobile{
+//             font-size: 15px;
+//             line-height: 25px;
+//             text-align: center;
+//         }
+//     }
+//     &__line{
+//        width: 25rem;
+//         height: 1px;
+//         position: absolute;
+//         background-color: $colorWhite;
+//         @include tablet {
+//             width: 33rem;
+//         }
+//         @include mobile{
+//             display: none;
+//         }
+//     }
+//     &__containerSubtile{
+//         width: 18rem;
+//         font-family: $fontsubTitle;
+//         font-style: normal;
+//         font-weight: 400;
+//         font-size: 10px;
+//         line-height: 17px;
+//         letter-spacing: 2.3625px;
+//         text-transform: uppercase;
+//         color: $colorBlue;
+//         display: flex;
+//         justify-content: space-between;
+//         padding-top: 2rem;
+//         padding-bottom: 8px;
+
+//         @include tablet{
+//             width: 33rem;
+//             background: yellow;
+//             display: flex;
+//             justify-content: space-around;
+//         }
+//         @include mobile{
+//             width: 19.5rem;
+//             background: yellow;
+//             display: flex;
+//             justify-content: space-around;
+//             padding-top: 1rem;
+//             font-size: 14px;
+//             text-align: center;
+//         }
+
+//     }
+//     &__cointainerDate{
+//         font-family: $fontTitle;
+//         font-style: normal;
+//         font-weight: 400;
+//         font-size: 28px;
+//         line-height: 32px;
+//         text-transform: uppercase;
+//         display: flex;
+//         @include tablet{
+//             width: 33rem;
+            
+//             display: flex;
+//             justify-content: space-around;
+//             text-align: center;
+//             font-size: 26px;
+//         }
+//         @include mobile{
+//             width: 12rem;
+           
+//             display: flex;
+//             justify-content: space-around;
+//             text-align: center;
+//             font-size: 26px;
+//         }
+//     }
+//     &__distance{
+//         margin-right: 85px;
+//         color: $colorWhite;
+//         @include tablet{
+//             margin-right: 0;
+//         }
+//         @include mobile{
+//             margin-right: 0;
+//             background-color: aqua;
+//             font-size: 28px;
+//             line-height: 32px;
+//             width: 19.5rem;
+//         }
+//     }
+
+
+// }
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:ital@0;1&family=Bellefair&display=swap');
 @import '../../styles/styles.scss';
 
-.nav{
-    &__Destination{
-        
-        margin-left: 55.5rem;
-        padding-top: 11rem;
+.destination{
+        display: flex;
+        width: 25rem;
         position: absolute;
+        height: 19px;
+        left: 55rem;
+        right: 28.72%;
+        top: calc(50% - 19px/2 - 7.5px);
+
+        font-family: 'Barlow Condensed';
         font-style: normal;
         font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        color: #D0D6F9;
 
         @include tablet{
-            background-color: aquamarine;
+
             margin-left: 12rem;
             margin-top: 27rem;
             padding: 1rem;
@@ -21,7 +394,6 @@
             font-size: 16px;
             line-height: 19px;
             letter-spacing: 2.7px;
-
         }
         @include mobile{
             
@@ -31,8 +403,11 @@
             width: 16.5rem;
             display: flex;
             justify-content: space-between;
-        }    
-    }
+        }  
+        &__link  {
+            color: #D0D6F9;
+        }
+
     ul {
         display: flex;
         align-items: center;
@@ -45,6 +420,7 @@
             }   
         }
     }
+
 }
 .main {
     display: flex;
@@ -57,7 +433,6 @@
     @include mobile{
         display: flex;
         flex-direction: column;
-        background: blue;
         width: 12rem;
 
     }
@@ -66,12 +441,10 @@
         width: 53rem;
         height: 46rem;
         @include tablet{
-            background: yellowgreen;
             width: 47rem;
             height: 30rem;
         }
         @include mobile{
-            background: yellowgreen;
             width:22rem;
             height: 22rem;
         }
@@ -85,12 +458,12 @@
         margin-top: 5rem;
         @include tablet{
             margin-left: 2rem;
-            background: red;
+           
             margin-top: 0.5rem;
             gap: 1rem;
         }
         @include mobile{
-            background: red;
+          
             width: 18rem;
             margin-left: 4.5rem;
         }
@@ -135,7 +508,7 @@
             font-size: 20px;
             line-height: 24px;
             letter-spacing: 3.375px;
-            background: purple;
+           
         }
         @include mobile{
             font-size: 16px;
@@ -156,14 +529,14 @@
             margin-top: 3rem;
             width: 19rem;
             height: 12rem;
-            background: rgb(82, 82, 203);
+           
         }
         @include mobile{
             margin-left: 2rem;
             margin-top: 1.5rem;
             width:20rem;
             height: 14rem;
-            background: rgb(82, 82, 203);
+            
             padding-left: 3rem;
         }
     }
@@ -195,14 +568,14 @@
         padding-left: 2.5rem;
         padding-top: 12rem;
         @include tablet{
-            background: rgb(205, 50, 89);
+           
             width: 42.5rem;
             height: 22rem;
             padding-left:5rem;
             padding-top: 1rem;
         }
         @include mobile{
-            background: rgb(205, 50, 89);
+            
             width:22rem;
             height: 15rem;
             padding-left:2rem;
@@ -224,7 +597,7 @@
         color: $colorWhite;
 
         @include tablet{
-            background: green;
+            
             width: 33rem;
             font-style: normal;
             font-size: 80px;
@@ -235,7 +608,7 @@
 
         }
         @include mobile{
-            background: green;
+           
             width: 19.5rem;
             padding-top: 0;
         }
@@ -247,7 +620,7 @@
         padding-bottom: 4rem;
         
         @include tablet{
-            background: peru;
+           
             width: 33rem;
             font-weight: 400;
             font-size: 16px;
@@ -255,7 +628,7 @@
             padding-bottom: 2rem;
         }
         @include mobile {
-            background: peru;
+           
             width: 19.5rem;
             padding-bottom: 1rem;
 
@@ -306,13 +679,11 @@
 
         @include tablet{
             width: 33rem;
-            background: yellow;
             display: flex;
             justify-content: space-around;
         }
         @include mobile{
             width: 19.5rem;
-            background: yellow;
             display: flex;
             justify-content: space-around;
             padding-top: 1rem;
@@ -354,7 +725,6 @@
         }
         @include mobile{
             margin-right: 0;
-            background-color: aqua;
             font-size: 28px;
             line-height: 32px;
             width: 19.5rem;
