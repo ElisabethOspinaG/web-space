@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './styleTecnology.scss'
 
+
 const MainTecnology = ({ technology, techId }) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -33,6 +34,7 @@ const MainTecnology = ({ technology, techId }) => {
               <article className='tech__steps'>
 
                 {/* Botones */}
+
               </article>
               <div className='tech__description'>
                 <h3 className='tech__title'>{item.text}</h3>
