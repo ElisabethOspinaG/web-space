@@ -36,7 +36,7 @@ const NavDestination = () => {
         <ul className='nav__ul'>
           {navDestination.map((item) => (
             <li key={item.id}>
-              <NavLink path= {item.path} className={"nav__link"} to={item.name}>{item.name}</NavLink>
+              <NavLink path= {item.path} className={"nav__link-destination"} to={item.name}>{item.name}</NavLink>
               <div className="line"></div>
 
             </li>
