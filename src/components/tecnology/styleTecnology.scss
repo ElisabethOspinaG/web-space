@@ -222,11 +222,13 @@
   }
 
   .tech__description {
-    margin-top: 40%;
+    margin-top: 30%;
+    margin-left: 20px;
+    width: 360px;
   }
 
   .button__container {
-    top: 80%;
+    top: 360px;
   }
 
   .tech__titleSpace__tittle {
@@ -236,4 +238,25 @@
   .tech__titleSpace__numTittle {
     margin-left: 2rem;
   }
+
+  .tech__paragraph  {
+    max-width: 300px;
+  }
+  .tech__name {
+    max-width: 300px;
+  }
+  .tech__title {
+    max-width: 300px;
+  }
+  .tech__description {
+    max-width: 300px;
+  }
+  .tech__titleSpace__tittle {
+    font-size: 1rem;
+  }
+  .tech__titleSpace__numTittle {
+    font-size: 1rem;
+  }
+
+
 }
