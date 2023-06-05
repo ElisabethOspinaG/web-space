@@ -88,8 +88,7 @@ const NavDestination = () => {
           {navDestination.map((item) => (
             <li key={item.id}>
               <NavLink path= {item.path} className={"destination__link"} to={item.name}>{item.name}</NavLink>
-              <div className="line"></div>
-
+              <div className="destination__line"></div>
             </li>
          ))}
         </ul>
