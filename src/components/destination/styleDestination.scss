@@ -6,7 +6,7 @@
         width: 25rem;
         position: absolute;
         height: 19px;
-        left: 55rem;
+        left: 52.5rem;
         right: 28.72%;
         top: calc(50% - 19px/2 - 7.5px);
         font-family: 'Barlow Condensed';
@@ -87,9 +87,16 @@
             }   
         }
         li{
-           max-width: 70px; 
-           padding-right: 5px;
-           text-align: center;
+                max-width: 100px; 
+                padding-right: 5px;
+                text-align: center;
+
+            @include mobile{
+                max-width: 70px; 
+                padding-right: 5px;
+                text-align: center;
+            }
+           
 
         }
 
