@@ -23,7 +23,9 @@ const Crew = () => {
 
 
   useEffect(() => {
+
      handleSlideChange(0)
+
     document.body.style.background = `url(${ImagenCrew}) no-repeat center center fixed`;
     document.body.style.backgroundSize = 'cover';
     document.body.style.backgroundColor = '#0B0D17';
@@ -31,6 +33,7 @@ const Crew = () => {
       document.body.style.backgroundImage = 'none';
     };
   },
+
   );
 
   const handleSlideChange = (index) => {

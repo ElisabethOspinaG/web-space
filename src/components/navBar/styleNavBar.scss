@@ -2,7 +2,7 @@
 @import '../../styles/mediaQuery.scss';
 
 .nav {
-    
+
     display: flex;
     background-color: transparent;
     justify-content: space-between;
@@ -36,13 +36,13 @@
             backdrop-filter: (70.7742px);
             height: 6rem;
             display: flex;
-            justify-content: space-between; 
+            justify-content: space-between;
             padding-left: 3.5rem;
             padding-right: 3.5rem;
             margin-left: 7rem;
             padding-top: 2rem;
         }
-        
+
         @include mobile {
             display: none;
 
@@ -52,6 +52,21 @@
             display: flex;
             flex-direction: row;
             gap: 2rem;
+            li {
+                margin-top: 2rem !important;
+            }
+        
+            li:hover {
+                .line{
+                margin-top: 2rem !important;
+                visibility: visible;
+                }
+        
+            }
+            li:active .line {
+                margin-top: 2rem !important;
+                visibility: visible;
+            }
 
             @include tablet {}
 
@@ -97,7 +112,7 @@
             }
 
             @include mobile {
-                
+
                 height: auto;
             }
         }
@@ -115,7 +130,7 @@
 
             @include mobile {
                 height: auto;
-                
+
             }
 
         }
@@ -150,7 +165,7 @@
 
         &:hover {
             color: $colorGray;
-            border: 10px; 
+            border: 10px;
         }
     }
 
@@ -173,17 +188,80 @@
     align-items: center;
     font-weight: 600;
     cursor: pointer;
-    li {
-        margin-top: 2rem !important;
-    }
-    li:hover {
-        margin-top: 2rem !important;
-      .line {
-      visibility: visible;
-    //   margin-top: 2rem;
-      }
-    }
+
+
+
     @include mobile {
         height: auto;
+    }
+}
+
+.menuBurgerClass {
+    background-color: red;
+    position: fixed;
+    width: 80vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    padding-left: 2rem;
+    padding-right: 12px;
+    // margin-left: 8%;
+    left: 20%;
+
+}
+
+.nav__ul {
+    @include mobile {
+    margin-top: 20%;
+    li {
+      
+          
+        }
+    }
+}
+
+.menu__button {
+    display: none;
+
+    @include mobile {
+        display: flex;
+    }
+
+}
+
+.menuBurgerClass {
+    img {
+        text-align: end;
+    }
+
+    color: #fff;
+
+}
+.btn__open {
+    color: $colorWhite;
+    font-size: 24px;
+    padding: 12px;
+}
+
+.button__close {
+    color: $colorWhite;
+    font-size: 24px;
+    padding: 12px;
+    text-align: end;
+    padding: 12px;
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .menu__button {
+        display: flex;
+    
     }
 }
