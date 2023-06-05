@@ -43,6 +43,15 @@
     &__numTittle {
       margin-left: 17rem;
       font-weight: bold;
+      font-family: $fontsubTitle;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 34px;
+      letter-spacing: 4.725px;
+      color: $colorGray;
+      mix-blend-mode: normal;
+      opacity: 0.25;
     }
 
     &__tittle {

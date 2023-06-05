@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const getTechnology = async () => {
     try {
-      const { data } = await axios.get("https://flowery-political-restaurant.glitch.me/crew");
+      const { data } = await axios.get("https://flowery-political-restaurant.glitch.me/technology");
       return data;
      
     } catch (error) {
@@ -11,19 +11,3 @@ export const getTechnology = async () => {
       return [];
     }
 };
-
-// const [technology, setTechnology] = useState([]);
-
-//   useEffect(() => {
-//     const axiosData = async () => {
-//       try {
-//         const data = await getTechnology();
-//         setTechnology(data);
-//         console.log("informacion de la data: ", data);
-//         console.log("informacion de la Technology: ", technology);
-//       } catch (error) {
-//         console.error('Error al obtener los datos de technology:', error);
-//       }
-//     };
-//     axiosData();
-//   }, []);

@@ -37,7 +37,7 @@ const NavBar = () => {
       id: "03"
     }
   ]
-
+  
 
   return (
     <>
