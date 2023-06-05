@@ -164,11 +164,6 @@
     width: auto;
   }
 
-  .button__container {
-    display: flex;
-    flex-direction: row;
-  }
-
   .active__step {
     width: 60px;
     height: 60px;
@@ -184,7 +179,7 @@
     left: 0;
     display: flex;
     justify-content: center;
-    top: 110%;
+    top: 500px;
   }
 
   .tech__titleSpace {
@@ -192,13 +187,6 @@
     line-height: 24px;
   }
 
-  .tech__titleSpace__numTittle {
-    margin-left: 7rem;
-  }
-
-  .button__container {
-    top: 90%;
-  }
 
   .tech__titleSpace__numTittle {
     margin-left: 2rem;
@@ -207,8 +195,10 @@
 }
 
 @include mobile {
-  .tech__name {
-    font-size: 24px;
+  .tech {
+    &__name {
+      font-size: 24px;
+    }
   }
 
   .active__step {
@@ -223,7 +213,7 @@
 
   .tech__description {
     margin-top: 30%;
-    margin-left: 20px;
+    margin-left: 0;
     width: 360px;
   }
 
@@ -239,21 +229,27 @@
     margin-left: 2rem;
   }
 
-  .tech__paragraph  {
+  .tech__paragraph {
     max-width: 300px;
+    text-align: justify;
   }
+
   .tech__name {
     max-width: 300px;
   }
+
   .tech__title {
     max-width: 300px;
   }
+
   .tech__description {
     max-width: 300px;
   }
+
   .tech__titleSpace__tittle {
     font-size: 1rem;
   }
+
   .tech__titleSpace__numTittle {
     font-size: 1rem;
   }
